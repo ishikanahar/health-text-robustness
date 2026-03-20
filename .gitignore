@@ -4,5 +4,7 @@ __pycache__/
 .ipynb_checkpoints/
 data/raw/
 data/processed/
-results/
+results/*
+!results/*.png
+!results/*.csv
 .DS_Store
