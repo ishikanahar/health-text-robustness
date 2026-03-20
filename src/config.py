@@ -1,0 +1,24 @@
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+DATA_RAW_DIR = PROJECT_ROOT / "data" / "raw"
+DATA_PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
+RESULTS_DIR = PROJECT_ROOT / "results"
+FIGURES_DIR = RESULTS_DIR / "figures"
+TABLES_DIR = RESULTS_DIR / "tables"
+
+RANDOM_STATE = 42
+TEST_SIZE = 0.2
+VAL_SIZE = 0.1
+
+TEXT_COLUMN = "text"
+LABEL_COLUMN = "label"
+
+MAX_VOCAB_SIZE = 10000
+MAX_SEQUENCE_LENGTH = 40
+BATCH_SIZE = 32
+EMBED_DIM = 50
+HIDDEN_DIM = 64
+NUM_EPOCHS = 20
+LEARNING_RATE = 1e-3
