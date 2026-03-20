@@ -112,30 +112,3 @@ Model Evaluation
         ↓
 Metrics + Robustness Analysis
 (accuracy / macro F1 / stress testing / qualitative examples)
-
----
-
-## Results
-
-### Accuracy under Perturbations
-![Accuracy](results/accuracy_across_perturbations.png)
-
-### Macro F1 under Perturbations
-![Macro F1](results/f1_across_perturbations.png)
-
-### Robustness Loss
-![Robustness](results/accuracy_drop_from_clean.png)
-
-### Confusion Matrix (TF-IDF Clean)
-![TFIDF](results/tfidf_clean_confusion_matrix.png)
-
-### Confusion Matrix (Transformer Typo)
-![Transformer](results/transformer_typo_confusion_matrix.png)
-
----
-
-## Full Results
-See `results/final_summary_table.csv`
-
-## Qualitative Examples
-See `results/qualitative_examples.csv`
