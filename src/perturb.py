@@ -1,16 +1,30 @@
 import random
 
 def synonym_replace(text):
-    # simple mock version for now
     synonyms = {
         "fever": "high temperature",
         "cough": "throat irritation",
         "pain": "discomfort",
         "headache": "head pain",
+        "fatigue": "tiredness",
+        "nausea": "feeling sick",
+        "vomiting": "throwing up",
+        "rash": "skin irritation",
+        "swelling": "inflammation",
+        "dizziness": "lightheadedness",
+        "shortness": "difficulty",
+        "breathing": "respiration",
+        "chest": "thoracic",
+        "stomach": "abdominal",
+        "throat": "pharynx",
+        "weakness": "lack of strength",
+        "infection": "illness",
+        "anxiety": "nervousness",
+        "depression": "low mood",
+        "itching": "pruritus",
     }
     words = text.split()
     return " ".join([synonyms.get(w, w) for w in words])
-
 
 def random_typo(text, prob=0.1):
     chars = list(text)
