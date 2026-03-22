@@ -15,6 +15,9 @@ def train_baseline(
     input_path = DATA_PROCESSED_DIR / input_filename
     df = pd.read_csv(input_path)
 
+    top_labels = df["label"].value_counts().head(10).index
+    df = df[df["label"].isin(top_labels)].copy()
+
     train_df = df[df["split"] == "train"].copy()
     test_df = df[df["split"] == "test"].copy()
 
